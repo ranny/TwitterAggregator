@@ -1,0 +1,49 @@
+body { padding-top: 70px; }
+
+.time::before {
+  content:"\00b7";
+}
+
+.panel-title a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.panel-link a {
+  text-decoration: none;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+    width:263px;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:263px;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+.list-group-item-heading small {
+  color: rgba(255, 255, 255, 0.843137);
+}
+
+.tw-end {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ccc;
+}
+
+.breadcrumb {
+  background-color: transparent;
+}
+
+.breadcrumb>.active {
+  color: rgba(255, 255, 255, 0.843137);
+}

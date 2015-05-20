@@ -1,0 +1,31 @@
+<script src="../TempTwitterAggregator/assets/js/jquery.min.js"></script>
+<script src="../TempTwitterAggregator/assets/js/bootstrap.min.js"></script>
+<script src="../TempTwitterAggregator/assets/js/ripples.min.js"></script>
+<script src="../TempTwitterAggregator/assets/js/material.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // This command is used to initialize some elements and make them work properly
+    $.material.init();
+  });
+
+  $('#sidebar').affix({
+      offset: {
+        top: $('header').height()
+      }
+  });
+
+  function centerModal() {
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+  }
+
+  $('.modal').on('show.bs.modal', centerModal);
+
+  $(window).on("resize", function () {
+      $('.modal:visible').each(centerModal);
+  });
+</script>

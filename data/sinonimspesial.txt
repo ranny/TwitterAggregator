@@ -1,0 +1,12 @@
+BG=budigunawan
+BKN=badankeuangannegara
+BW=bambangwidjoyanto
+DM=directmessage
+JK=jusufkalla
+KL=kualalumpur
+MU=manchesterunited
+NU=nadhdlatululama
+KY=komisiyudisial
+UU=undangundang
+UUD=undangundangdasar
+PN=pengadilannegeri
